@@ -1,0 +1,24 @@
+table, tr {
+    border: 1px solid white;
+    border-collapse: collapse;
+    background-color: turquoise;
+}
+
+td,th{
+
+}
+tr:first-child {
+    background-color: purple !important;
+    color: white;
+    text-align: center;
+}
+ 
+tr:last-child {
+    background-color: pink;
+    color: white;
+    text-align: center;    
+}
+ 
+tr:hover {
+    opacity: 0.5;  
+}
