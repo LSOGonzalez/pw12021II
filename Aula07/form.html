@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2><tile>Réplica de Elementos de Forms</tile></h2>
+    </head>
+    <br>
+    <body>
+    <h2>Vamos começar:</h2>
+
+    <fieldset>
+        <legend>Dados Pessoais:</legend>
+    <form action="/action_page.php">
+      <label for="fname">Nome ou Apelido</label><br>
+      <input type="text" id="fname" name="fname" value= "Ex: Hunter"><br><br>
+      <label for="fname">Idade:</label><br>
+      <input type="text" id="idade" name="idade" value= "Ex: 35"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend>Preferências:</legend><br>
+
+        <form action="/action_page.php">
+            <label for="decisao">Você sabe cozinhar?</label>
+            <select id="decisao" name="decisao">
+              <option value="Sim">Sim, sei! </option>
+              <option value="Não">Não, só miojo...</option>
+
+            </select>
+            <input type="submit">
+          </form>
+          <p>
+           Das opções abaixo o que você prefere?
+        </p>
+        <form action="/action_page.php">
+            <label for="comida">Escolha uma comida:</label>
+            <select id="comida" name="comida" size="2" multiple>
+              <option value="mm">Massas</option>
+              <option value="ff">Frituras</option>
+              <option value="ss">Saudáveis</option>
+              <option value="garbage">Fast Food</option>
+            </select><br><br>
+            <input type="submit">
+          </form>
+          
+          <p> OBS: Mantenha o Ctrl(Windows) ou o Commad(Mac) pressionado para selecionar mais de uma opção</p>
+          
+          <p>Se você respondeu SIM para a primeira pergunta, descreva os ingredientes de um prato que você saiba fazer:</p>
+          <form action="/action_page.php">
+            <textarea name="message" rows="10" cols="30">EX: Digite os ingredientes de um macarrão à bolonhesa.</textarea>
+            <br><br>
+            <input type="submit">
+          </form>
+          <br>
+          <p>Se você respondeu NÃO para a primeira pergunta, aperte o botão abaixo:</p>
+          <button type="button" onclick="alert('Você vai morrer de fome se sempre precisar depender de alguém, vá trabalhar sua autonomia.')">Clique aqui!</button>
+            
+
+    </fieldset>
+    </body>
+
+</html>
