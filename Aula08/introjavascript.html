@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        <p>O Javascript serve para deixar uma página interativa, ou seja, tira o tédio que é ver uma página estatica. Por conta disso, é encontrato em várias esferas: Back-End; Front-End; Mobile, IA , etc </p>
+        <h2>Teste de botões</h2>
+            <p id="teste1">Isso é um teste</p>
+        <button
+            type="buton"
+            onclick='document.getElementById("teste1").innerHTML =
+            "Estou pensando em viajar "'>
+            Me aperta I
+        </button>
+
+        <button 
+            type="button"
+            onclick='alert("Vontade de ir no banheiro")'>
+        
+            Me aperta II
+    </button>
+    <h2>Botão para imprimir</h2>
+       
+    <button onclick="window.print()">Imprimir página</button>
+    
+    <h2>Tentativa de incluir imagem</h2>
+
+    <button onclick="document.getElementById('myImage').src=''">Virar Direita</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Virar Esquerda</button>
+
+
+    </body>
+</html>
